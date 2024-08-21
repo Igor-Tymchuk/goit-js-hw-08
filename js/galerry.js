@@ -102,7 +102,7 @@ function startModal(event) {
     const currElem = event.target.dataset.source;
     if (!currElem) return;
     const modal = basicLightbox.create(`
-    <img src="${currElem}" width="800px" height="600px">
+    <img src="${currElem}" width="800px" height="600px" loading="lazy">
 `)
     modal.show()
 
